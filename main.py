@@ -1,5 +1,5 @@
-def calculate():
-    x = input("Введите ваш пример (с отступом между цифрами (10 - 5)): ")
+x = input("Введите пример: ")
+def main(x):
     example = x.split()
     if len(example) != 3 or example[1] not in ['+', '-', '*', '/']:
         print("Неправильный ввод, введите по примеру выше")
@@ -25,4 +25,4 @@ def calculate():
     print(f"{num1} {example[1]} {num2} = {result}")
 
 
-calculate()
+main(x)
